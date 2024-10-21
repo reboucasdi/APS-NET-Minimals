@@ -1,9 +1,11 @@
+using MinimalApi.DTOs;
+
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
 app.MapGet("/", () => "Hello World!");
 
-app.MapPost("/login", (LoginDTO LoginDTO) => {
+app.MapPost("/login", (MinimalApi.DTOs.LoginDTO LoginDTO) => {
     if(LoginDTO.Email == "adm@teste.com" && LoginDTO.Senha == "123456")
         return Results.Ok("Login com sucesso");
     else
@@ -14,10 +16,3 @@ app.MapPost("/login", (LoginDTO LoginDTO) => {
 
 
 app.Run();
-
-public class LoginDTO
-{
-    public string Email { get; set;} = default!;
-    public string Senha { get; set;} = default!;
-
-}
