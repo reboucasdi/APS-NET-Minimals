@@ -16,5 +16,5 @@ Além disso, aproveitamos o poder das migrations do Entity Framework para garant
 Adicionamos o Swagger para gerar automaticamente a documentação da API, permitindo que as rotas e operações CRUD sejam facilmente testadas e visualizadas. O Swagger simplifica o processo de teste e validação da API, além de servir como documentação para outros desenvolvedores que irão consumir o serviço.
 ## 6. Tratamento de Nullability e Boa Prática de Código
 Durante o desenvolvimento, foi necessário lidar com verificações de nulidade, especialmente nas configurações do JWT. Adotamos o operador ?? para definir valores padrão e prevenir possíveis exceções de referência nula. Esse cuidado aumenta a robustez do código e previne erros comuns que poderiam ocorrer em produção.
-Conclusão
+## Conclusão
 O projeto de API minimalista foi desenvolvido com uma arquitetura modular e organizada, seguindo boas práticas e padrões recomendados. A implementação de autenticação JWT e proteção dos endpoints de CRUD garante segurança, enquanto o uso do Entity Framework Core e SQL Server oferece persistência de dados de maneira eficiente. O uso do Swagger facilitou o teste e validação, tornando o projeto uma base sólida para uma aplicação de cadastro de veículos escalável e segura.
